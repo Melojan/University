@@ -1,4 +1,4 @@
-Team 24 Manual Guide:
+The Manual Guide:
 
 1) Authentication
 
@@ -12,12 +12,11 @@ Admin Password : admin
 System User Login : 54321
 System Password: user
 
-
 Once you logged in , the main menu with all the modules will appear.
 From the main menu , you be able to click any modules that you wish to select.
 If you wish to logout , you can click the logout button on the top right corner.
 
-1) Customer account
+2) Customer account
 
 In order to add/delete a record, right click on the appropriate record and click add or delete
 
@@ -27,7 +26,11 @@ Any other appropriate functionality will be intuitively available at the bottom 
 
 Thank you
 
+<<<<<<< HEAD
 2) Parts 
+=======
+3) Parts 
+>>>>>>> fb742a9c2ce1e646aab4d8cff3c1d19137d9f1c5
 
 Once you clicked on "Parts" , there are two tables called "Repair Table" and "Parts Table".
 
@@ -41,9 +44,6 @@ Once you added a new part with your desired "PartCost","Level of Stock" and "Des
 You can now install the part into the repair, go to "Details of Repair" and add any data into it,
 but make sure you enter the install date one year before the warranty date.
 
-If you scroll down through the "RepairTable" all the way to the end, it ends with 10 , so for the BookingID and CustomerID,
-you must enter 11. 
-
 Once you added your data then the "Repair Table" updates automatically. When pressing the "Update Parts Table", 
 then you can see that your chosen PartsName , the StockLevel reduces to 1. You can wish to edit all the data in the PartsTable whenever you like.
 But make sure you update the partstable.
@@ -55,7 +55,11 @@ then press the "Enter Button" , so it can search for your data.
 The Booking Table is at the bottom of the window, you be able to view all the customer details and booking dates and by pressing "View Bill"
 you be able to see their bill and if you wish to delete a booking for the chosen person , you press "Delete Booking".
 
+<<<<<<< HEAD
 3)Vehicle Record
+=======
+4)Vehicle Record
+>>>>>>> fb742a9c2ce1e646aab4d8cff3c1d19137d9f1c5
 
 When you clicked on Vehicle Records you will be presented with 5 tables. The top table is for all the vehicle information. The middle left table shows warranty details of the vehicles. Middle right table shows all past booking dates. The bottom left table shows all customer details and on the bottom right you have the future booking dates. The whole Vehicle record page has home, logout, add vehicle, edit vehicle, edit warranty, remove and refresh button. There is a search bar at the top which you can search by.
 
