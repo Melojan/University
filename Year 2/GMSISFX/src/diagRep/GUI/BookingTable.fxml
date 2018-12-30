@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1000.0" prefWidth="1000.0" styleClass="background" stylesheets="@../../common/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diagRep.GUI.BookingTableController">
+   <children>
+      <TableView fx:id="searchTable" layoutY="56.0" prefHeight="278.0" prefWidth="994.0">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="50.0" text="ID" />
+            <TableColumn fx:id="bookingDateColumn" prefWidth="106.0" text="Booking Date" />
+            <TableColumn fx:id="timeColumn" prefWidth="52.0" text="Time" />
+            <TableColumn fx:id="durationColumn" prefWidth="72.0" text="Duration" />
+            <TableColumn fx:id="mechanicColumn" prefWidth="107.0" text="Mechanic ID" />
+            <TableColumn fx:id="firstNameColumn" prefWidth="105.0" text="First Name" />
+            <TableColumn fx:id="lastNameColumn" prefWidth="92.0" text="Last Name" />
+            <TableColumn fx:id="vehicleRegistrationColumn" minWidth="0.0" prefWidth="152.0" text="Registration Number" />
+            <TableColumn fx:id="typeColumn" minWidth="8.0" prefWidth="68.0" text="Type" />
+            <TableColumn fx:id="currentMColumn" minWidth="0.0" prefWidth="126.0" text="Current Mileage" />
+            <TableColumn fx:id="makeColumn" prefWidth="61.0" text="Make" />
+         </columns>
+      </TableView>
+      <Button fx:id="addButton" layoutX="161.0" layoutY="741.0" mnemonicParsing="false" onAction="#add" prefHeight="34.0" prefWidth="160.0" text="Add Booking">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="editButton" layoutX="352.0" layoutY="741.0" mnemonicParsing="false" onAction="#editBookingAction" prefHeight="34.0" prefWidth="141.0" text="Edit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="removeButton" layoutX="35.0" layoutY="741.0" mnemonicParsing="false" text="Remove">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="viewTable" layoutY="384.0" prefHeight="264.0" prefWidth="735.0">
+        <columns>
+          <TableColumn fx:id="vehicleRegistrationCol" prefWidth="158.0" text="Registration Number " />
+            <TableColumn fx:id="fnameCol" prefWidth="117.0" text="First Name " />
+            <TableColumn fx:id="lnameCol" prefWidth="108.0" text="Last name" />
+            <TableColumn fx:id="mechIdCol" minWidth="0.0" prefWidth="94.0" text="Mechanic ID" />
+            <TableColumn fx:id="bookingDateCol" prefWidth="74.0" text="Booking Date " />
+            <TableColumn fx:id="timeCol" prefWidth="67.0" text="Time" />
+            <TableColumn fx:id="durationCol" prefWidth="116.0" text="Duration (in min )" />
+        </columns>
+      </TableView>
+      <CheckBox fx:id="byHour" layoutX="588.0" layoutY="344.0" mnemonicParsing="false" onAction="#filterByHour" text="Next Hour " textFill="WHITE" />
+      <CheckBox fx:id="fBooking" layoutX="731.0" layoutY="684.0" mnemonicParsing="false" text="Future Bookings" textFill="WHITE" />
+      <CheckBox fx:id="byToday" layoutX="690.0" layoutY="344.0" mnemonicParsing="false" onAction="#filterByToday" text="Today" textFill="WHITE" />
+      <CheckBox fx:id="byMonth" layoutX="765.0" layoutY="345.0" mnemonicParsing="false" text="This Month" textFill="WHITE" />
+      <CheckBox fx:id="pBooking" layoutX="597.0" layoutY="684.0" mnemonicParsing="false" text="Past Bookings" textFill="WHITE" />
+      <CheckBox fx:id="showAll" layoutX="874.0" layoutY="346.0" mnemonicParsing="false" onAction="#showAllBooking" selected="true" text="Show All" textFill="WHITE" />
+      <CheckBox fx:id="showAll2" layoutX="870.0" layoutY="684.0" mnemonicParsing="false" onAction="#showAllBooking2" selected="true" text="Show All" textFill="WHITE" />
+      <TableView fx:id="table" layoutX="731.0" layoutY="385.0" prefHeight="271.0" prefWidth="256.0">
+        <columns>
+          <TableColumn fx:id="mechanicIDcol" prefWidth="112.0" text="MechanicID" />
+          <TableColumn fx:id="duration1Col" prefWidth="85.0" text="Duration " />
+            <TableColumn fx:id="costCol" prefWidth="67.0" text="Cost " />
+        </columns>
+      </TableView>
+      <Button fx:id="homeButton" layoutX="882.0" layoutY="21.0" mnemonicParsing="false" onAction="#home" text="HOME">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="searchtxt" layoutX="250.0" layoutY="684.0" onAction="#searchFunction" onKeyReleased="#searchFunction" prefHeight="26.0" prefWidth="204.0" />
+      <ComboBox fx:id="droplist" layoutX="100.0" layoutY="684.0" prefHeight="26.0" prefWidth="141.0" styleClass="comBoxBOxAtButtom" stylesheets="@../../common/style.css" />
+      <Text fill="WHITE" layoutX="33.0" layoutY="702.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search by:" />
+      <Button fx:id="refreshbtn" layoutX="864.0" layoutY="743.0" mnemonicParsing="false" onAction="#refresh" text="Refresh">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Text fill="WHITE" layoutX="319.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Repair Booking ">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Booking">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="14.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Past and Future Booking">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

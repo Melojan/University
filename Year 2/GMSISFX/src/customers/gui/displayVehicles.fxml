@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customers.gui.DisplayVehiclesController">
+   <children>
+      <TableView fx:id="vehicletbv" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="regNumber" prefWidth="120.0" text="Reg. Number" />
+            <TableColumn fx:id="model" prefWidth="75.0" text="Model" />
+            <TableColumn fx:id="make" prefWidth="75.0" text="Make" />
+            <TableColumn fx:id="engineSize" prefWidth="81.0" text="Engine Size" />
+            <TableColumn fx:id="fuelType" prefWidth="69.0" text="Fuel Type" />
+            <TableColumn fx:id="colour" prefWidth="104.0" text="Colour" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

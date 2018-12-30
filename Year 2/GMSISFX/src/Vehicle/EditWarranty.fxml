@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="237.0" prefWidth="320.0" styleClass="background" stylesheets="@../common/style.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vehicle.EditWarrantyController">
+   <children>
+      <Button fx:id="updateButton" layoutX="144.0" layoutY="199.0" mnemonicParsing="false" onAction="#updateEdit" prefHeight="26.0" prefWidth="149.0" text="Update">
+         <font>
+            <Font name="Arial Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="24.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company Address :" />
+      <Text fill="WHITE" layoutX="24.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company Name :" />
+      <Text fill="WHITE" layoutX="24.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Waranty ID :" />
+      <Text fill="WHITE" layoutX="25.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Of Expiry :" />
+      <TextField fx:id="warrantyIDTextField" layoutX="136.0" layoutY="50.0" prefHeight="27.0" prefWidth="165.0" />
+      <TextField fx:id="nameTextField" layoutX="136.0" layoutY="86.0" prefHeight="27.0" prefWidth="165.0" />
+      <TextField fx:id="addressTextField" layoutX="136.0" layoutY="123.0" prefHeight="27.0" prefWidth="165.0" />
+      <TextField fx:id="expiryDateTextField" layoutX="136.0" layoutY="159.0" prefHeight="27.0" prefWidth="165.0" />
+      <Text fill="WHITE" layoutX="23.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Vehicle Warranty Details" underline="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

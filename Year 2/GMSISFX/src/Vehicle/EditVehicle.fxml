@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="320.0" styleClass="background" stylesheets="@../common/style.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vehicle.EditVehicleController">
+   <children>
+      <Text fill="#fff9f9" layoutX="72.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Vehicle Details" underline="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#fff9f9" layoutX="20.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle ID:" />
+      <Text fill="#fff9f9" layoutX="21.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Type :" />
+      <Text fill="#fff9f9" layoutX="20.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registeration number :" />
+      <Text fill="#fff9f9" layoutX="19.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Model :" />
+      <Text fill="#fff9f9" layoutX="18.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Make :" />
+      <Text fill="#fff9f9" layoutX="18.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Engine Size :" />
+      <Text fill="#fff9f9" layoutX="19.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fuel Type :" />
+      <Text fill="#fff9f9" layoutX="18.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Colour :" />
+      <Text fill="#fff9f9" layoutX="18.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MoT renewal date :" />
+      <Text fill="#fff9f9" layoutX="17.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Service :" />
+      <Text fill="#fff9f9" layoutX="17.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mileage :" />
+      <TextField fx:id="idTextField" layoutX="144.0" layoutY="49.0" prefHeight="27.0" prefWidth="164.0" />
+      <TextField fx:id="vehicleTypeTextField" layoutX="144.0" layoutY="85.0" prefHeight="27.0" prefWidth="164.0" />
+      <TextField fx:id="regTextField" layoutX="144.0" layoutY="121.0" prefHeight="33.0" prefWidth="164.0" />
+      <TextField fx:id="modelTextField" layoutX="144.0" layoutY="157.0" prefHeight="33.0" prefWidth="164.0" />
+      <TextField fx:id="makeTextField" layoutX="144.0" layoutY="193.0" prefHeight="33.0" prefWidth="164.0" />
+      <TextField fx:id="engineSizeTextField" layoutX="144.0" layoutY="229.0" prefHeight="33.0" prefWidth="164.0" />
+      <TextField fx:id="fuelTypeTextField" layoutX="144.0" layoutY="265.0" prefHeight="33.0" prefWidth="164.0" />
+      <TextField fx:id="colourTextField" layoutX="144.0" layoutY="301.0" prefHeight="33.0" prefWidth="164.0" />
+      <TextField fx:id="MotDateTextField" layoutX="144.0" layoutY="337.0" prefHeight="33.0" prefWidth="164.0" />
+      <TextField fx:id="lastServiceTextField" layoutX="144.0" layoutY="373.0" prefHeight="33.0" prefWidth="164.0" />
+      <TextField fx:id="milageTextField" layoutX="144.0" layoutY="409.0" prefHeight="33.0" prefWidth="164.0" />
+      <Button fx:id="updateButton" layoutX="151.0" layoutY="448.0" mnemonicParsing="false" onAction="#updateEdit" prefHeight="26.0" prefWidth="149.0" text="Update">
+         <font>
+            <Font name="Arial Bold Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
