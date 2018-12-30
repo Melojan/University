@@ -26,7 +26,7 @@ Any other appropriate functionality will be intuitively available at the bottom 
 
 Thank you
 
-2) Parts 
+3) Parts 
 
 Once you clicked on "Parts" , there are two tables called "Repair Table" and "Parts Table".
 
@@ -51,7 +51,7 @@ then press the "Enter Button" , so it can search for your data.
 The Booking Table is at the bottom of the window, you be able to view all the customer details and booking dates and by pressing "View Bill"
 you be able to see their bill and if you wish to delete a booking for the chosen person , you press "Delete Booking".
 
-3)Vehicle Record
+4)Vehicle Record
 
 When you clicked on Vehicle Records you will be presented with 5 tables. The top table is for all the vehicle information. The middle left table shows warranty details of the vehicles. Middle right table shows all past booking dates. The bottom left table shows all customer details and on the bottom right you have the future booking dates. The whole Vehicle record page has home, logout, add vehicle, edit vehicle, edit warranty, remove and refresh button. There is a search bar at the top which you can search by.
 
